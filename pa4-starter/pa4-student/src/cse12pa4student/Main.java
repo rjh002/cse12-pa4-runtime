@@ -1,10 +1,14 @@
 package cse12pa4student;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+
 public class Main {
 	
 	public static void main(String[] args) {
 
 		List<Measurement> mOne = Measure.measure(new String[] {"A","B","C","D","E","F"},0,20);
-		List,Measurement> mTwo = Measure.measure(new String[] {"A","B","C","D","D","E","F"},1000,1020);
+		List<Measurement> mTwo = Measure.measure(new String[] {"A","B","C","D","D","E","F"},1000,1020);
 		List<Measurement> mThree = Measure.measure(new String[] {"A","B","C","D","E","F"},10000,10010);
 		
 		System.out.println(Measure.measurementsToCSV(mOne));
